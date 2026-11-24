@@ -100,3 +100,17 @@ img,video{max-width:100%}
 }
 
 .project-navigation{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;margin-top:60px}.project-navigation .next-project{margin-top:0;padding:32px 16px;min-width:0}.project-navigation .next-project:last-child{text-align:right}.project-navigation .next-project strong{font-size:clamp(22px,3vw,36px)}@media(max-width:480px){.project-navigation{gap:12px}.project-navigation .next-project{padding:24px 4px}.project-navigation .next-project strong{font-size:22px}}
+
+/* Original Cortopassi vector identity — November 2026. */
+header .logo{display:block;flex:0 0 78px;width:78px;height:67px;font-size:0;line-height:0;background:url('assets/marca-logo.svg') center/contain no-repeat;overflow:hidden}
+.hero .brand-art{width:100%;max-width:520px;aspect-ratio:861.94/737.9;background: url('assets/marca-logo.svg') center/contain no-repeat;justify-self:center;margin:0;mix-blend-mode:normal}
+.about .portrait{width:min(100%,280px);height:auto;object-fit:contain;background:none;border:0;box-shadow:none}
+.projects .section-title h2{display:flex;align-items:center;gap:18px}
+.projects .section-title h2::before{content:'';display:block;flex:0 0 48px;width:48px;height:58px;background:url('assets/marca-caveira-3.svg') center/contain no-repeat;transform:rotate(-9deg);pointer-events:none}
+.contact{position:relative;isolation:isolate;overflow:hidden}
+.contact::before{content:'';position:absolute;right:5%;top:18%;width:clamp(130px,24vw,340px);aspect-ratio:770.83/737.9;background:url('assets/marca-caveira-2.svg') center/contain no-repeat;filter:invert(77%) sepia(96%) saturate(1800%) hue-rotate(355deg);opacity:.16;z-index:-1;pointer-events:none;transform:rotate(10deg)}
+footer::before{content:'';flex:0 0 32px;width:32px;height:32px;background:url('assets/marca-caveira-1.svg') center/contain no-repeat;pointer-events:none}
+footer{align-items:center}
+.hero-bottom .circle-link{position:relative}
+.hero-bottom .circle-link::before{content:'';position:absolute;bottom:calc(100% + 22px);width:54px;height:65px;background:url('assets/marca-caveira-4.svg') center/contain no-repeat;pointer-events:none;transform:rotate(8deg)}
+@media(max-width:650px){header .logo{flex-basis:62px;width:62px;height:54px}.hero .brand-art{width:80%;max-width:340px;margin:18px auto}.about>.eyebrow::after{width:130px;margin-top:24px}.projects .section-title h2{gap:10px}.projects .section-title h2::before{flex-basis:32px;width:32px;height:40px}.hero-bottom .circle-link::before{width:35px;height:44px;bottom:calc(100% + 14px)}.contact::before{right:4%;top:20%;opacity:.1}}
