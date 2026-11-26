@@ -127,6 +127,13 @@ footer::before{flex-basis:62px;width:62px;height:62px}
 
 /* Keep pattern and film in one blur layer; decorative brand animation. */
 .opening-sticky{background:var(--lime)}
-body::after{content:'';position:fixed;right:12px;bottom:12px;width:76px;height:135px;background:var(--lime) url('assets/marca-motion.gif') center/contain no-repeat;border-radius:8px;pointer-events:none;z-index:20}
-@media(max-width:650px){body::after{width:48px;height:85px;right:6px;bottom:6px}}
-@media(prefers-reduced-motion:reduce){body::after{display:none}}
+body::after{content:none}
+.hero-brand{display:flex;align-items:center;justify-content:center;gap:12px;min-width:0}
+.hero .hero-brand .brand-art{width:66%;max-width:300px;flex-shrink:0;margin:0}
+.hero-motion{display:block;width:30%;max-width:145px;height:auto;pointer-events:none}
+.magazine-access{margin:0 0 40px;padding:24px;border:1px solid var(--ink);background:var(--lime)}
+.magazine-access h2{font:400 28px Anton,Impact,sans-serif;margin:0 0 12px}
+.magazine-access a{display:inline-block;border-bottom:2px solid currentColor;padding:6px 0;font-weight:700}
+.magazine-access a:focus-visible{outline:3px solid var(--ink);outline-offset:5px}
+@media(max-width:650px){.hero-brand{width:100%;max-width:390px;justify-self:center}.hero .hero-brand .brand-art{max-width:220px}.hero-motion{max-width:110px}}
+@media(prefers-reduced-motion:reduce){.hero-motion{display:none}}
