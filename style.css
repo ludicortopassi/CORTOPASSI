@@ -137,3 +137,8 @@ body::after{content:none}
 .magazine-access a:focus-visible{outline:3px solid var(--ink);outline-offset:5px}
 @media(max-width:650px){.hero-brand{width:100%;max-width:390px;justify-self:center}.hero .hero-brand .brand-art{max-width:220px}.hero-motion{max-width:110px}}
 @media(prefers-reduced-motion:reduce){.hero-motion{display:none}}
+
+/* Project opening image and expandable text */
+.case-cover{margin:32px 0 48px;width:100%}.case-cover img{display:block;width:100%;max-height:80vh;object-fit:contain;background:#e8e5db}
+.case-read-more{border-bottom:1px solid currentColor;padding-bottom:18px;margin-top:20px}.case-read-more summary{cursor:pointer;font-weight:600;padding:12px 0;color:var(--ink)}.case-read-more[open] summary{margin-bottom:18px}.case-read-more summary:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+.gallery .project-film video{display:block;width:100%;height:auto}.contact-links{flex-wrap:wrap}.contact-links a{max-width:100%}
